@@ -10,3 +10,6 @@ Prepare:
  Extract text:
  - Image: tesseract <path to image: input> <path to text: output>
  - PDF: convert -quality 100 -density 300 <patho to pdf: input> <path to image: output>
+ 
+ 
+In Python you can use it as described in https://pythonprogramminglanguage.com/extract-text-from-image/ -> look at extractText.py
