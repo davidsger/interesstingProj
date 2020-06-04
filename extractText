@@ -1,0 +1,12 @@
+From https://github.com/tesseract-ocr/tesseract
+
+Prepare:
+1) Install tesseract-ocr in terminal: sudo apt install tesseract-ocr
+2) Change settings for ImageMagick: 
+   - sudo nano /etc/ImageMagick-6/policy.xml or sudo nano /etc/ImageMagick/policy.xml
+   - change in line <policy domain="coder" rights="none" pattern="PDF" /> to rights="read|write"
+   - save with strg+o
+   
+ Extract text:
+ - Image: tesseract <path to image: input> <path to text: output>
+ - PDF: convert -quality 100 -density 300 <patho to pdf: input> <path to image: output>
